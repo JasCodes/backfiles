@@ -1,0 +1,20 @@
+{
+  "name": "backfiles",
+  "version": "0.0.1",
+  "description": "Utility scripts",
+  "bin": {
+    "backfiles": "index.js"
+  },
+  "scripts": {
+    "patch": "npm version patch",
+    "whoami": "npm whoami",
+    "pub": "npm publish",
+    "push-tag": "git push origin master --tags",
+    "push": "run-s patch whoami pub push-tag"
+  },
+  "author": "Jaspreet Singh <dev@jas.bio>",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}
